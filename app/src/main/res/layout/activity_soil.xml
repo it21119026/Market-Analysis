@@ -1,0 +1,221 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Soil">
+
+    <!-- Year -->
+    <TextView
+        android:id="@+id/idTVYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="7dp"
+        android:text="Select Year"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+
+    <!-- Province -->
+    <EditText
+        android:id="@+id/yearSpinner"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTVYear"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="67dp"
+        android:hint="Year" />
+
+    <!-- Automation Factors Checkboxes -->
+    <TextView
+        android:id="@+id/idTVProvince"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/yearSpinner"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="10dp"
+        android:text="Select Province"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/provinceSpinner"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTVProvince"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="68dp"
+        android:hint="Province" />
+
+    <TextView
+        android:id="@+id/Automation_Factors_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/provinceSpinner"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="20dp"
+        android:text="Automation Factors"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+
+    <CheckBox
+        android:id="@+id/automationCheckBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Automation_Factors_view"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="-1dp"
+        android:text="Irrigation system / Climate Cintrol / Lighting Systems" />
+
+    <!-- Vanilla Plant Variation Textbox and Checkboxes -->
+
+    <TextView
+        android:id="@+id/variationEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/automationCheckBox1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="18dp"
+        android:hint=" Variation of Vanilla Plant"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/vanillaCheckBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/variationEditText"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@id/vanillaCheckBox1"
+        android:text="Tahitensis" />
+
+    <CheckBox
+        android:id="@+id/vanillaCheckBox5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vanillaCheckBox2"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@id/vanillaCheckBox4"
+        android:text="Pompona" />
+
+    <CheckBox
+        android:id="@+id/vanillaCheckBox6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vanillaCheckBox3"
+        android:layout_marginStart="-94dp"
+        android:layout_marginTop="-49dp"
+        android:layout_toEndOf="@id/vanillaCheckBox5"
+        android:text="Planifolia" />
+
+    <CheckBox
+        android:id="@+id/vanillaCheckBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vanillaCheckBox1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="0dp"
+        android:text="Pompoona / tahitensis" />
+
+    <CheckBox
+        android:id="@+id/vanillaCheckBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/variationEditText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginEnd="239dp"
+        android:text="Planifolia / Pompona" />
+
+    <CheckBox
+        android:id="@+id/vanillaCheckBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/variationEditText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="10dp"
+        android:text="Planifolia / Tahitensis" />
+
+    <!-- Construction Materials Checkboxes -->
+    <TextView
+        android:id="@+id/constructionMaterialsView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_below="@id/vanillaCheckBox6"
+        android:text="Construction Materials"
+        android:textColor="#000000" />
+
+    <CheckBox
+        android:id="@+id/constructionCheckBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/constructionMaterialsView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="1dp"
+        android:text="Polycarbonate / Polethylene Film" />
+
+    <CheckBox
+        android:id="@+id/constructionCheckBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/constructionMaterialsView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="48dp"
+        android:text="Polycarbonate / Nylon Insect Net" />
+
+    <CheckBox
+        android:id="@+id/constructionCheckBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/constructionMaterialsView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="97dp"
+        android:text="Nylon Insect Net / Polethylene Film" />
+
+    <CheckBox
+        android:id="@+id/constructionCheckBox9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/constructionMaterialsView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="145dp"
+        android:text="Polycarbonate /  Nylon Insect Net" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="149dp"
+        android:layout_marginEnd="137dp"
+        android:layout_marginBottom="2dp"
+        android:text="Submit" />
+
+</RelativeLayout>
